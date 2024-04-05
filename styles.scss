@@ -21,7 +21,8 @@ body {
   background-color: hsl(0, 0%, 100%);
   width: $card-width;
   height: $card-height;
-  align-items: left;
+  align-items: flex-start; // Aligns .card children to the start of the cross axis
+  flex-direction: column;
   text-align: left;
   border-top: 1px solid black;
   border-left: 1px solid black;
@@ -36,6 +37,7 @@ body {
     margin: $margin;
   }
   &__tag {
+    display: inline-block;
     background-color: hsl(47, 88%, 63%);
     border-radius: 4px;
     padding: 8px;

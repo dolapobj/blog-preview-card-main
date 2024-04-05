@@ -13,7 +13,8 @@ body {
   background-color: hsl(0, 0%, 100%);
   width: 20vw;
   height: 50vh;
-  align-items: left;
+  align-items: flex-start;
+  flex-direction: column;
   text-align: left;
   border-top: 1px solid black;
   border-left: 1px solid black;
@@ -29,6 +30,7 @@ body {
   margin: 20px;
 }
 .card__tag {
+  display: inline-block;
   background-color: hsl(47, 88%, 63%);
   border-radius: 4px;
   padding: 8px;
