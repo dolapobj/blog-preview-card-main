@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap");
+
+$font-stack: "Figtree", sans-serif;
+$margin: 20px;
+$card-width: 20vw;
+$card-height: 50vh;
+$main-text-color: hsl(0, 0%, 7%);
+$second-text-color: hsl(0, 0%, 50%);
+$margin-small: $margin;
+
+body {
+  background-color: hsl(47, 88%, 63%);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  font-family: $font-stack;
+  align-items: center; // Centers children vertically
+  font-size: calc(12px + (16 - 14) * ((100vw - 320px) / (1600 - 320)));
+}
+.card {
+  background-color: hsl(0, 0%, 100%);
+  width: $card-width;
+  height: $card-height;
+  align-items: left;
+  text-align: left;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 10px 5px 1px 3px black;
+  padding-bottom: 20px;
+  &__image {
+    display: block;
+    max-width: calc(100% - 2 * $margin);
+    height: auto;
+    border-radius: 10px;
+    margin: $margin;
+  }
+  &__tag {
+    background-color: hsl(47, 88%, 63%);
+    border-radius: 4px;
+    padding: 8px;
+    font-weight: 700;
+    margin-bottom: $margin-small;
+    margin-left: $margin;
+    margin-top: 0px;
+  }
+  &__publish-date {
+    margin-bottom: $margin-small;
+    margin-left: $margin;
+    margin-top: 0px;
+    color: $main-text-color;
+    font-size: 1rem * 0.65;
+  }
+  &__heading {
+    margin-bottom: $margin-small;
+    margin-left: $margin;
+    margin-top: 0px;
+    color: $main-text-color;
+    font-size: 1.5rem;
+  }
+  &__description {
+    margin-bottom: $margin-small;
+    margin-left: $margin;
+    margin-top: 0px;
+    color: $second-text-color;
+  }
+  &__container {
+    display: flex; /* This enables flexbox */
+    align-items: center; /* This vertically centers the items in the container */
+    justify-content: flex-start;
+    margin-bottom: $margin;
+  }
+
+  &__prof-pic {
+    display: block;
+    width: 2vw;
+    height: auto;
+    margin-left: $margin;
+    margin-right: $margin*.5;
+  }
+  &__name {
+  }
+}
+
+.design-overlay {
+  background: url("./design/desktop-design.jpg") no-repeat center center;
+  background-size: contain; /* This will ensure that the image is fully visible */
+  width: 100vw; /* Set the width to the full viewport width */
+  height: 100vh; /* Set the height to the full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex; // Use flexbox for side by side
+  // Add some spacing between the card and the design overlay if desired
+}

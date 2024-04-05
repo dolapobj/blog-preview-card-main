@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap");
+body {
+  background-color: hsl(47, 88%, 63%);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  font-family: "Figtree", sans-serif;
+  align-items: center;
+  font-size: calc(12px + 2 * (100vw - 320px) / 1280);
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  width: 20vw;
+  height: 50vh;
+  align-items: left;
+  text-align: left;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 10px 5px 1px 3px black;
+  padding-bottom: 20px;
+}
+.card__image {
+  display: block;
+  max-width: calc(100% - 40px);
+  height: auto;
+  border-radius: 10px;
+  margin: 20px;
+}
+.card__tag {
+  background-color: hsl(47, 88%, 63%);
+  border-radius: 4px;
+  padding: 8px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-top: 0px;
+}
+.card__publish-date {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-top: 0px;
+  color: hsl(0, 0%, 7%);
+  font-size: 0.65rem;
+}
+.card__heading {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-top: 0px;
+  color: hsl(0, 0%, 7%);
+  font-size: 1.5rem;
+}
+.card__description {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-top: 0px;
+  color: hsl(0, 0%, 50%);
+}
+.card__container {
+  display: flex; /* This enables flexbox */
+  align-items: center; /* This vertically centers the items in the container */
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+.card__prof-pic {
+  display: block;
+  width: 2vw;
+  height: auto;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+.design-overlay {
+  background: url("./design/desktop-design.jpg") no-repeat center center;
+  background-size: contain; /* This will ensure that the image is fully visible */
+  width: 100vw; /* Set the width to the full viewport width */
+  height: 100vh; /* Set the height to the full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+}
+
+/*# sourceMappingURL=styles.css.map */
