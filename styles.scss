@@ -20,6 +20,7 @@ body {
 .card {
   background-color: hsl(0, 0%, 100%);
   width: $card-width;
+  display: flex;
   height: $card-height;
   align-items: flex-start; // Aligns .card children to the start of the cross axis
   flex-direction: column;
